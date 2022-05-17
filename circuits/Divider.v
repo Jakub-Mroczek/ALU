@@ -4,7 +4,7 @@
 `include "../circuits/2to1_mux.v"
 
 module Divider
-    //Multiplier algo as placeholder
+    //Multiplier algo as placeholder 
     #(parameter n = 8)
     (
     input wire clock,
