@@ -1,0 +1,473 @@
+$date
+	Mon May 16 05:08:36 2022
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module MultiplierTB $end
+$var wire 1 ! finished $end
+$var wire 9 " product [8:0] $end
+$var reg 8 # A [7:0] $end
+$var reg 8 $ B [7:0] $end
+$var reg 1 % clock $end
+$var reg 1 & reset $end
+$var reg 1 ' start $end
+$scope module Mult $end
+$var wire 8 ( A [7:0] $end
+$var wire 8 ) B [7:0] $end
+$var wire 8 * InAdder [7:0] $end
+$var wire 8 + OutRShift [7:0] $end
+$var wire 1 , SelectMuxA $end
+$var wire 1 - SelectMuxB $end
+$var wire 1 . SelectMuxProduct $end
+$var wire 1 % clock $end
+$var wire 1 ! finished $end
+$var wire 1 & reset $end
+$var wire 1 ' start $end
+$var wire 9 / product [8:0] $end
+$var wire 8 0 OutMuxProduct [7:0] $end
+$var wire 8 1 OutMuxB [7:0] $end
+$var wire 8 2 OutMuxA [7:0] $end
+$var wire 8 3 OutLShift [7:0] $end
+$var reg 8 4 FeedbackAdder [7:0] $end
+$var reg 8 5 InLShift [7:0] $end
+$var reg 8 6 InRShift [7:0] $end
+$var reg 1 7 en_LS $end
+$var reg 1 8 en_RS $end
+$scope module multAdder $end
+$var wire 8 9 addend [7:0] $end
+$var wire 8 : augend [7:0] $end
+$var wire 8 ; sums [7:0] $end
+$var wire 9 < final_sum [8:0] $end
+$var wire 9 = carries [8:0] $end
+$scope begin genblk1[0] $end
+$scope module full_adder_gen $end
+$var wire 1 > a $end
+$var wire 1 ? b $end
+$var wire 1 @ cin $end
+$var wire 1 A cout $end
+$var wire 1 B sum $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[1] $end
+$scope module full_adder_gen $end
+$var wire 1 C a $end
+$var wire 1 D b $end
+$var wire 1 E cin $end
+$var wire 1 F cout $end
+$var wire 1 G sum $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[2] $end
+$scope module full_adder_gen $end
+$var wire 1 H a $end
+$var wire 1 I b $end
+$var wire 1 J cin $end
+$var wire 1 K cout $end
+$var wire 1 L sum $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[3] $end
+$scope module full_adder_gen $end
+$var wire 1 M a $end
+$var wire 1 N b $end
+$var wire 1 O cin $end
+$var wire 1 P cout $end
+$var wire 1 Q sum $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[4] $end
+$scope module full_adder_gen $end
+$var wire 1 R a $end
+$var wire 1 S b $end
+$var wire 1 T cin $end
+$var wire 1 U cout $end
+$var wire 1 V sum $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[5] $end
+$scope module full_adder_gen $end
+$var wire 1 W a $end
+$var wire 1 X b $end
+$var wire 1 Y cin $end
+$var wire 1 Z cout $end
+$var wire 1 [ sum $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[6] $end
+$scope module full_adder_gen $end
+$var wire 1 \ a $end
+$var wire 1 ] b $end
+$var wire 1 ^ cin $end
+$var wire 1 _ cout $end
+$var wire 1 ` sum $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[7] $end
+$scope module full_adder_gen $end
+$var wire 1 a a $end
+$var wire 1 b b $end
+$var wire 1 c cin $end
+$var wire 1 d cout $end
+$var wire 1 e sum $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module multLShift $end
+$var wire 1 % clock $end
+$var wire 1 7 en $end
+$var wire 8 f in [7:0] $end
+$var wire 8 g out [7:0] $end
+$scope begin genblk1[0] $end
+$upscope $end
+$scope begin genblk1[1] $end
+$upscope $end
+$scope begin genblk1[2] $end
+$upscope $end
+$scope begin genblk1[3] $end
+$upscope $end
+$scope begin genblk1[4] $end
+$upscope $end
+$scope begin genblk1[5] $end
+$upscope $end
+$scope begin genblk1[6] $end
+$upscope $end
+$upscope $end
+$scope module multMuxA $end
+$var wire 8 h a [7:0] $end
+$var wire 8 i b [7:0] $end
+$var wire 8 j out [7:0] $end
+$var wire 1 , sel $end
+$upscope $end
+$scope module multMuxB $end
+$var wire 8 k a [7:0] $end
+$var wire 8 l b [7:0] $end
+$var wire 8 m out [7:0] $end
+$var wire 1 - sel $end
+$upscope $end
+$scope module multMuxProduct $end
+$var wire 8 n a [7:0] $end
+$var wire 8 o b [7:0] $end
+$var wire 8 p out [7:0] $end
+$var wire 1 . sel $end
+$upscope $end
+$scope module multRShift $end
+$var wire 1 % clock $end
+$var wire 1 8 en $end
+$var wire 8 q in [7:0] $end
+$var wire 8 r out [7:0] $end
+$scope begin genblk1[0] $end
+$upscope $end
+$scope begin genblk1[1] $end
+$upscope $end
+$scope begin genblk1[2] $end
+$upscope $end
+$scope begin genblk1[3] $end
+$upscope $end
+$scope begin genblk1[4] $end
+$upscope $end
+$scope begin genblk1[5] $end
+$upscope $end
+$scope begin genblk1[6] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bz0000101 r
+b1011 q
+b1101 p
+b0 o
+b1101 n
+bz0000101 m
+bz0000101 l
+b1101 k
+b11010 j
+b11010 i
+b1101 h
+b11010 g
+b1101 f
+0e
+0d
+0c
+0b
+0a
+0`
+0_
+0^
+0]
+0\
+0[
+0Z
+0Y
+0X
+0W
+0V
+0U
+0T
+0S
+0R
+1Q
+0P
+0O
+0N
+1M
+1L
+0K
+0J
+0I
+1H
+0G
+0F
+0E
+0D
+0C
+1B
+0A
+0@
+0?
+1>
+b0 =
+b1101 <
+b1101 ;
+b1101 :
+b0 9
+18
+17
+b1011 6
+b1101 5
+b0 4
+b11010 3
+b11010 2
+bz0000101 1
+b1101 0
+b1101 /
+1.
+0-
+0,
+bz0000101 +
+b1101 *
+b1001 )
+b1101 (
+0'
+0&
+0%
+b1001 $
+b1101 #
+b1101 "
+z!
+$end
+#10
+1[
+1Y
+1U
+1T
+b100111 0
+b100111 p
+b100111 n
+b110000 =
+1P
+1G
+0V
+b100111 "
+b100111 /
+b100111 <
+b100111 ;
+0Q
+0>
+1C
+0H
+1R
+1?
+1I
+1N
+bz000010 1
+bz000010 m
+bz000010 +
+bz000010 l
+bz000010 r
+b110100 2
+b110100 j
+b110100 3
+b110100 g
+b110100 i
+b11010 *
+b11010 :
+b1101 4
+b1101 9
+bz0000101 6
+bz0000101 q
+b11010 5
+b11010 f
+1%
+#20
+0%
+#30
+0Y
+0Q
+0U
+0O
+0T
+0`
+0V
+1[
+b100111 0
+b100111 p
+b100111 n
+0K
+0P
+0^
+b100111 "
+b100111 /
+b100111 <
+b100111 ;
+1L
+b0 =
+0Z
+0R
+0C
+0H
+0M
+0W
+1D
+0N
+1X
+bz00001 1
+bz00001 m
+bz00001 +
+bz00001 l
+bz00001 r
+b1101000 2
+b1101000 j
+b1101000 3
+b1101000 g
+b1101000 i
+b0 *
+b0 :
+b100111 4
+b100111 9
+bz000010 6
+bz000010 q
+b110100 5
+b110100 f
+1%
+#40
+0%
+#50
+1e
+1c
+1_
+1^
+b11000000 =
+1Z
+b10001111 0
+b10001111 p
+b10001111 n
+1Q
+0[
+b10001111 "
+b10001111 /
+b10001111 <
+b10001111 ;
+0`
+1M
+1W
+1\
+b1101000 *
+b1101000 :
+bz0000 1
+bz0000 m
+bz0000 +
+bz0000 l
+bz0000 r
+b11010000 2
+b11010000 j
+b11010000 3
+b11010000 g
+b11010000 i
+bz00001 6
+bz00001 q
+b1101000 5
+b1101000 f
+1%
+#60
+0%
+#70
+0c
+0_
+0^
+0`
+1e
+b10001111 0
+b10001111 p
+b10001111 n
+0Z
+b10001111 "
+b10001111 /
+b10001111 <
+b10001111 ;
+0V
+b0 =
+0d
+0\
+0M
+0R
+0W
+0a
+1N
+0X
+1b
+b10100000 2
+b10100000 j
+b10100000 3
+b10100000 g
+b10100000 i
+b0 *
+b0 :
+b10001111 4
+b10001111 9
+bz0000 6
+bz0000 q
+b11010000 5
+b11010000 f
+1%
+#80
+0%
+#90
+b1000000 2
+b1000000 j
+b1000000 3
+b1000000 g
+b1000000 i
+b10100000 5
+b10100000 f
+1%
+#100
+0%
+#110
+b10000000 2
+b10000000 j
+b10000000 3
+b10000000 g
+b10000000 i
+b1000000 5
+b1000000 f
+1%
+#120
+0%
+#130
+b0 2
+b0 j
+b0 3
+b0 g
+b0 i
+b10000000 5
+b10000000 f
+1%
+#140
+0%

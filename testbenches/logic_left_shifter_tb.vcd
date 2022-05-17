@@ -1,0 +1,73 @@
+$date
+	Mon May 16 04:30:04 2022
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module ShifterTB $end
+$var wire 4 ! out_tb [3:0] $end
+$var reg 1 " clock $end
+$var reg 1 # en $end
+$var reg 4 $ in [3:0] $end
+$scope module LShift $end
+$var wire 1 " clock $end
+$var wire 1 # en $end
+$var wire 4 % in [3:0] $end
+$var reg 4 & out [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx &
+b1010 %
+b1010 $
+1#
+0"
+bx !
+$end
+#10
+b100 !
+b100 &
+bx $
+bx %
+1"
+#20
+b100 $
+b100 %
+0"
+#30
+b1000 !
+b1000 &
+1"
+#40
+b1000 $
+b1000 %
+0"
+#50
+b0 !
+b0 &
+1"
+#60
+b0 $
+b0 %
+0"
+#70
+1"
+#80
+0"
+#90
+1"
+#100
+0"
+#110
+1"
+#120
+0"
+#130
+1"
+#140
+0"
